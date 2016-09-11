@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+	<h1 class="post-title" "This is an HTML post."</h1>
+	
+	<h2> "This is the second biggest heading" </h2>
+	
+	<ul> 
+	<h3> "This is a heading for a list"</h3>
+	<li> <p> Item 1 </p>
+	<li> <p> Item 2 </p>
+	<li> <p> Item 3 </p>
+	
+	<ul>
+	
+	
+	<p> Text zum Bild. </p>
+	<img src="https://www.google.de/images/branding/googleg/1x/googleg_standard_color_128dp.png" />
+	
+	<h1> <a href="https://google.de"> Link zu Google</a> </h1>
+	
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
