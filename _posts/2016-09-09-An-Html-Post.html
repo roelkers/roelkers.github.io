@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+	<style>
+	div.list {
+		background-color: white;
+		color: red;
+		margin: 20px 0 20px 0;
+		padding: 20px;
+	}
+
+    </style>
   {% include head.html %}
 
   <body>
@@ -10,16 +19,16 @@
 
 	<h1 class="post-title" "This is an HTML post."</h1>
 	
-	<h2> "This is the second biggest heading" </h2>
+	<h2 class="post> "This is the second biggest heading" </h2>
 	
 	<ul> 
 	<h3> "This is a heading for a list"</h3>
+	<div class="list">
 	<li> <p> Item 1 </p>
 	<li> <p> Item 2 </p>
 	<li> <p> Item 3 </p>
-	
+	</div>
 	<ul>
-	
 	
 	<p> Text zum Bild. </p>
 	<img src="https://www.google.de/images/branding/googleg/1x/googleg_standard_color_128dp.png" />
