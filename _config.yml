@@ -16,7 +16,7 @@
 title: Rufus' first website
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  A place for me to practice web developement. In the future some written things about juggling, dance and movement may be added.
+  A collection of information about dance techniques.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: ---
