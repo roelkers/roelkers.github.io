@@ -1,31 +1,116 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  
-  
-  {% include head.html %}
+---
+layout: default
+---
+	
+	<h1 class="post-title"> Laban and Movement Effort </h1>	
+	
+	<p> Rudolf Laban studied first architecture and painting before the death of his first wife led him to move to munich 
+		to take courses in anatomy and movement at age 30. In 1910 he founded his own dance group. After the first world war 
+		he opened a dance school in zurich, which was followed by 24 other Laban dance schools in europe. While he was not part
+		of the resistance under the fascist regime, he was actually promoted director of the German Theater Stage. After a play which 
+		was banned by propaganda minister Joseph Goebbels, he left Germany in 1937 and moved to the UK. He died there in 1958.<br>
+		
+		During his research he developed many different concepts that are persistent in dance to this day. His notation for dance is 
+		very detailed and gained recognition in the USA under the name Labanotation. The method is very complex but also powerful.<br>
+		
+		What is more interesting for jugglers/dancers today are the different effort categories that describe how a movement is done with respect to inner intentions.
+		Effort has four categories which each have two different polarities:<br></p>
+		
+	<h2>Effort factors</h2>
+	<div id="accordion">
+	<h3>Space</h3>
+	<div>Direct vs. Indirect</div>
+	<h3>Weight</h3>
+	<div>Strong vs. Light</div>
+	<h3>Time</h3>
+	<div>Sudden vs. Slow(Sustained)</div>
+	<h3>Flow</h3>
+	<div>Bound vs. Free</div>
+	</div>
+	<br>
+	
+	The idea is that the different effort qualities combined create a type of movement. I made a small app that returns the name of the movement Laban gave them. 
+	For now the flow category is not included yet. Each movement can be done bound or free, it signifies rather how the movement is connected to the ones before and afterwards.
+	
+	
+	<h2> Laban Effort Generator </h2>
 
-  <body>
+	
+  <fieldset>
+  <form id="Space">
+    <legend>Space</legend>
+    <div id="radio">
+      <input type="radio" class="radioButton" id="radioDirect" name="radioSpace" value="Direct">
+      <label for="radioDirect">Direct</label>
  
- <h2 class="demoHeaders">Accordion</h2>
-<div id="accordion">
-	<h3>First</h3>
-	<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.TTT</div>
-	<h3>Second</h3>
-	<div>Phasellus mattis tincidunt nibh.</div>
-	<h3>Third</h3>
-	<div>Nam dui erat, auctor a, dignissim quis.</div>
-</div>
+      <input type="radio" class="radioButton" id="radioIndirect" name="radioSpace" value="Indirect" checked="checked">
+      <label for="radioIndirect">Indirect</label>
+ 
+    </div>
+	</form>
+  </fieldset>
 
-    {% include header.html %}
-
-	<h1 class="post-title" "This is an HTML post."</h1>
-	
-	
-	<p> Text zum Bild. </p>
 	
 
-    {% include footer.html %}
+  <fieldset>
+  	<form id="Weight">
+    <legend>Weight</legend>
+    <div id="radioW">
+      <input type="radio" class="radioButton" id="radioLight" name="radioWeight" value="Light">
+      <label for="radioLight">Light</label>
+ 
+      <input type="radio" class="radioButton" id="radioHeavy" name="radioWeight" value="Strong" checked="checked">
+      <label for="radioHeavy">Heavy</label
+    </div>
+	</form>
+  </fieldset>
+  
 
-  </body>
+<fieldset>
+</form  id="Time">
+    <legend>Time</legend>
+    <div id="radioT">
+      <input type="radio" class="radioButton" id="radioFast" name="radioTime" value="Fast" >
+      <label for="radioFast">Fast</label>
+ 
+      <input type="radio" class="radioButton" id="radioSlow" name="radioTime" value="Slow" checked="checked">
+      <label for="radioSlow">Slow</label>
+ 
+    </div>
+	</form>
+ </fieldset>
 
-</html>
+
+<form>
+<fieldset>
+    <legend>Resulting movement</legend>
+	<div class="ui-widget">
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;" id="EffortResult">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Use the buttons to create an effort quality.</strong></p>
+	</div>
+	</div>
+  </fieldset>
+</form>
+
+<p><br>These categories can be used in any movement related context, in juggling too! Almost all movements we already are able to do can be assigned to one of the effort categories. <br>
+	Some categories we rarely use and its a really weird and rewarding feeling to discover them. For juggling the slow efforts are hard to use for throws, because it needs a quick hand movement. However
+	it is possible use to them in between, for example in a pirouette or the carry motion in the factory trick.<br>
+	
+	Some more fun exercises you can try with these are:<br></p>
+	
+	<li> Try moving in one category (Gliding, Pressing, etc.) for 5 minutes.</li>
+	<li> Use one light and one heavy effort and switch between them. How many ways are there to make the transition?</li>
+	<li> For practing character: Associate a mood/emotion (sadness, happiness, ..) with an effort (wringing, flicking,..) and try to express yourself. You will see, some work really well together! </li>
+	<br>
+	<p> I found this a nice way to explore movement and I have to mention Anthony Trehair who wrote the "Pearls of Juggling" book, who writes about this also and whose workshop at EJC was very inspirational.</br>
+
+  <script
+			  src="http://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+<script
+			  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+			  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+			  crossorigin="anonymous"></script>
+  <script src="/assets/laban.js"></script>
