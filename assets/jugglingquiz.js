@@ -3,7 +3,7 @@ var main = function (){
 	$("#answerButton").button();
 	$("#answerRadioDiv").buttonset();
 	var questions = new Array();
-	questions = loadXMLDocTest();
+	questions = loadXMLDoc();
 	if (questions.length!=0){
 		updateQuestionForm(questions[0]);
 	}
