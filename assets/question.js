@@ -15,7 +15,7 @@ class Question {
 		this.answerD = answerD;
 		this.correctAnswer = correctAnswer;
 	}
-	
+
 	checkAnswer(answer){
 		if (this.correcAnswer === answer){
 			return 1;
@@ -25,4 +25,3 @@ class Question {
 		}
 	}
 }
-

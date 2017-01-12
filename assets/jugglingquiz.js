@@ -1,13 +1,18 @@
+
+
 var main = function (){
-	
+
 	$("#answerButton").button();
-	$("#answerRadioDiv").buttonset();
-	var questions = new Array();
-	questions = loadXMLDoc();
-	if (questions.length!=0){
-		updateQuestionForm(questions[0]);
-	}
-	
+
+
+
+
+  questions = loadXMLDoc();
+
+
+	/*
+	$("#answerRadioDiv").buttonsequestions = loadQuestions(this);
+
 	$("#answerButton").click(function(){
 		var answer = $("#answerRadioForm input[type='radio']:checked").val();
 		if (questions.checkAnswer(answer) == true)
@@ -15,14 +20,8 @@ var main = function (){
 		else
 			$("#answerResponse").text = "Sorry, Answer is not correct.";
 	});
+	*/
 }
 
-var updateQuestionForm = function(question){
-	$("#QuestionText").text(question.text);
-	$("#AnswerA").text(question.answerA);
-	$("#AnswerB").text(question.answerB);
-	$("#AnswerC").text(question.answerC);
-	$("#AnswerD").text(question.answerD);
-}
 
 $(document).ready(main);
