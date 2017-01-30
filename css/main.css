@@ -1,0 +1,28 @@
+.nav-link{
+  margin-left:30px;
+}
+
+.lightblue-background{
+  background-color: #8fbfbf;
+  border-radius: 5px;
+}
+
+body{
+  background-color: lightgrey;
+}
+
+#profile-img{
+  border-radius: 90px;
+  border: solid 4px;
+}
+
+#about-box{
+  background-color: #d66a4f;
+  border-radius:5px;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+#social-media{
+  margin-bottom: 20px;
+}

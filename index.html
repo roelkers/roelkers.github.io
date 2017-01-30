@@ -1,23 +1,78 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<head>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<header>
+  <div class="container-fluid">
+    <nav class="navbar">
+      <a class="navbar-brand" href="intro">RO</a>
+      <div class="navbar-nav navbar-text pull-right">
+        <a class="nav-item nav-link navbar-active" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#about-box">About</a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#social-media">Social Media</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="jumbotron lightblue-background" id="intro">
+    <h1 class="text-center"> Hello World!</h1>
+  </div>
+  <div class="container lightblue-background">
+    <div class="row" id="about-box">
+      <div class="col-sm-offset-2 col-sm-4">
+        <h3>Aspiring Web Developer with a solid background <br>
+              in math, engineering and building applications.
+         </h3>
+      </div>
+      <div class="col-sm-6">
+        <img src="https://scontent.ftxl1-1.fna.fbcdn.net/v/t1.0-1/c1.0.160.160/p160x160/13939390_1334956233188781_4882706599450218245_n.jpg?oh=8f30ffcb4177a13abd0ce9f5b02cb10c&oe=5918BB8F" id="profile-img" class="img-responsive center-block">
+      </div>
+    </div>
+    <div class="row lightblue-background" id="projects">
+      <br>
+      <h2 class="text-center">Projects</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="http://codepen.io/Roelkers/pen/xgrxEN" class="thumbnail block-center">
+          <img src="http://i1243.photobucket.com/albums/gg553/rufus_oelkers/weather_app_zpsdp5awmza.png" target="_blank">
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href="http://codepen.io/Roelkers/pen/NdbMEp" class="thumbnail block-center">
+          <img src="http://i1243.photobucket.com/albums/gg553/rufus_oelkers/quote_generator_zpsiethttap.png" target="_blank">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://codepen.io/Roelkers/full/mRJZKW/" class="thumbnail block-center">
+          <img src="http://i1243.photobucket.com/albums/gg553/rufus_oelkers/Laban_Tribute_zpsow7lgr2t.png" target="_blank">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      
+      <hr>
+      <div class="row" id="social-media">
+        <div class="text-center">
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/rufus_oelkers" target="_blank">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a class="btn btn-social-icon btn-github" href="https://github.io/roelkers" target="_blank">
+            <span class="fa fa-github"></span>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://plus.google.com/u/0/116297653275846616265" target="_blank">
+            <span class="fa fa-google"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <br>
+  <br>
+  <p class="text-center">Made by Rufus Oelkers</p>
+</footer>
